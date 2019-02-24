@@ -8,7 +8,7 @@
       class="feature"
     >
       <div class="preview">
-        <img v-bind:src="feature.image">
+        <img v-bind:src="feature.image" alt="preview">
       </div>
       <div class="info">
         <h4 class="featured">{{text.projects.featured}}</h4>
@@ -17,7 +17,7 @@
         <ul class="techs" v-for="tech of feature.techs" v-bind:key="tech">
           <li>{{tech}}</li>
         </ul>
-        <a class="github-link" v-bind:href="feature.link">
+        <a class="github-link" aria-label="github-link" v-bind:href="feature.link">
           <github-icon/>
         </a>
       </div>

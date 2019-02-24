@@ -5,7 +5,7 @@
         <h1 class="header">{{text.about.title}}</h1>
         <p>{{text.about.aboutFirst}}</p>
         <p>{{text.about.aboutSecond}}</p>
-        <div id="techs">
+        <div id="about-techs">
           <ul>
             <li v-for="tech of text.about.aboutTechs1" v-bind:key="tech">{{tech}}</li>
           </ul>
@@ -36,13 +36,13 @@ export default {
   display: flex;
   flex-wrap: wrap;
 }
-#techs {
+#about-techs {
   display: flex;
 }
-#techs ul li {
+#about-techs ul li {
   font-family: monospace;
 }
-#techs ul {
+#about-techs ul {
   flex: 1 1 auto;
 }
 </style> 

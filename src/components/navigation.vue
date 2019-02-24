@@ -1,7 +1,7 @@
 <template>
   <header id="navigation-header">
     <div ref="nav" id="navigation">
-      <a aria-label="Home" href="/" class="logo"></a>
+      <a aria-label="Home" href="./" class="logo"></a>
       <span id="sidenav-button" @click="toggleSidenav()">
         <menu-button ref="menu"/>
       </span>
@@ -35,10 +35,10 @@ export default {
   data: function() {
     return {
       navItems: [
-        { name: "", ref: "#welcome-section", url: "/" },
-        { name: "About", ref: "#about", url: "/about" },
-        { name: "Experience", ref: "#work", url: "/experience" },
-        { name: "Projects", ref: "#projects", url: "/projects" }
+        { name: "", ref: "#welcome-section", url: "./" },
+        { name: "About", ref: "#about", url: "./about" },
+        { name: "Experience", ref: "#work", url: "./experience" },
+        { name: "Projects", ref: "#projects", url: "./projects" }
       ]
     };
   },

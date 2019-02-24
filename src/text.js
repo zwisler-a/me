@@ -50,7 +50,7 @@ export default {
     features: [
       {
         name: 'Game-Engine2',
-        image: '/assets/engine.gif',
+        image: 'assets/engine.gif',
         desc:
           'Pariatur exercitation Lorem labore dolor fugiat esse fugiat. Pariatur non dolor sit magna. Do ullamco occaecat dolore enim et cupidatat.',
         techs: ['Typescript'],
@@ -58,7 +58,7 @@ export default {
       },
       {
         name: 'Game-Engine',
-        image: '/assets/engine.gif',
+        image: 'assets/engine.gif',
         desc:
           'Pariatur exercitation Lorem labore dolor fugiat esse fugiat. Pariatur non dolor sit magna. Do ullamco occaecat dolore enim et cupidatat.',
         techs: ['Typescript'],

@@ -2,44 +2,48 @@
   <div id="app">
     <main>
       <welcome/>
-      <skills/>
+      <about class="hidden"/>
+      <work class="hidden"/>
+      <featured-projects class="hidden"/>
+      <projects class="hidden"/>
     </main>
     <navigation/>
+    <networks/>
   </div>
 </template>
 
 <script>
 import navigation from "./components/navigation.vue";
-import welcome from "./components/welcome.vue";
-import skills from "./components/skills.vue";
+import welcome from "./components/sections/welcome.vue";
+import work from "./components/sections/work.vue";
+import about from "./components/sections/about.vue";
+import networks from "./components/networks.vue";
+import projects from "./components/sections/projects.vue";
+import featuredProjects from "./components/sections/featured-projects.vue";
 
 export default {
   name: "app",
   components: {
     navigation,
     welcome,
-    skills
+    work,
+    about,
+    networks,
+    projects,
+    featuredProjects
   }
 };
 </script>
 
-<style>
-#app section {
-  height: 100vh;
-}
+<style scoped>
 #app main {
   margin: auto;
   max-width: 1280px;
+  padding: 0 112px;
 }
-html,
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  --background: #1e2129;
-  --accent: #40c4ff;
-  --font: rgb(214, 214, 214);
-
-  color: var(--font);
-  background: var(--background);
+@media only screen and (max-width: 768px) {
+  #app main {
+    padding: 0 16px;
+  }
 }
 </style>

@@ -1,0 +1,101 @@
+#app section {
+  margin-bottom: 256px;
+}
+html,
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  --background: #1e2129;
+  --background-light: #353a48;
+  --accent: #40c4ff;
+  --accent2: #0277bd;
+  --font: rgb(214, 214, 214);
+  --font-dark: rgba(214, 214, 214, 0.555);
+
+  color: var(--font);
+  background: var(--background);
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.logo {
+  color: var(--accent);
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: solid 3px var(--accent);
+  transform: rotate(45deg);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+}
+.logo::before {
+  content: 'Z';
+  display: block;
+  transform: rotate(-45deg);
+}
+
+a svg {
+  fill: var(--font);
+}
+a:hover svg {
+  fill: var(--accent);
+}
+
+h1.header {
+  position: relative;
+  overflow: hidden;
+  color: var(--accent);
+  max-width: 360px;
+}
+h1.header::after {
+  content: '';
+  width: 100%;
+  margin-left: 20px;
+  position: absolute;
+  top: 50%;
+  height: 1px;
+  background: white;
+}
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+.fade-in {
+  animation: fadeIn ease 1s;
+}
+
+.fade-in-bottom {
+  animation: fadeInBottom ease 0.5s;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translate(0px, -25px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes fadeInBottom {
+  0% {
+    opacity: 0;
+    transform: translate(55px, 0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}

@@ -19,7 +19,7 @@ export default {
     });
     setTimeout(() => {
       this.$data.cursor = ".";
-    }, (chars.length + 3) * 50);
+    }, (chars.length - 1) * 50);
   }
 };
 </script>

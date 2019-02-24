@@ -15,11 +15,11 @@ body {
   color: var(--font);
   background: var(--background);
 }
-.centered {
+.centered.logo {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) rotate(45deg);
 }
 .logo {
   color: var(--accent);

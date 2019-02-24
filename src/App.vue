@@ -44,6 +44,7 @@ export default {
 @media only screen and (max-width: 768px) {
   #app main {
     padding: 0 16px;
+    overflow: hidden;
   }
 }
 </style>

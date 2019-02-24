@@ -39,8 +39,11 @@ export default {
 </script>
 
 <style scoped>
+#projects .header {
+  margin-bottom: 128px;
+}
 #projects {
-  margin-bottom: 32px;
+  margin-bottom: 128px;
 }
 .feature {
   position: relative;
@@ -80,7 +83,7 @@ export default {
 }
 .preview {
   flex: 50% 1 0;
-
+  height: 100%;
   max-height: 250px;
   margin-left: -50px;
   position: relative;

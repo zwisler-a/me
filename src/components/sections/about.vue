@@ -4,7 +4,7 @@
       <div style="flex: 250px 1 1;">
         <h1 class="header">{{text.about.title}}</h1>
         <p>{{text.about.aboutFirst}}</p>
-        <p>{{text.about.aboutSecons}}</p>
+        <p>{{text.about.aboutSecond}}</p>
         <div id="techs">
           <ul>
             <li v-for="tech of text.about.aboutTechs1" v-bind:key="tech">{{tech}}</li>

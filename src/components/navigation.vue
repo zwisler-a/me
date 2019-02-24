@@ -153,10 +153,12 @@ export default {
     width: 0px;
     justify-content: center;
     right: 0px;
-    border-left: solid 1px var(--accent);
     top: 0px;
     z-index: 5000;
     background: var(--background);
+  }
+  .open #nav {
+    border-left: solid 1px var(--accent);
   }
   #sidenav-button {
     display: block;

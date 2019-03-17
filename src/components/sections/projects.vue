@@ -1,7 +1,7 @@
 <template>
   <section>
     
-    <h1 class="header">More Projects</h1>
+    <h1 class="header">{{text.projects.github}}</h1>
     <div id="github">
       <div class="project" v-for="project of projects" v-bind:key="project.id">
         <span class="header">
@@ -20,12 +20,14 @@
 <script>
 import githubIcon from "../shared/github-icon.vue";
 import { fadeIntoView } from "../shared/fadeIntoView-mixin.js";
+import text from '../../text.js';
 
 export default {
   name: "projects",
   mixins: [fadeIntoView],
   data: () => ({
-    projects: []
+    projects: [],
+    text
   }),
   components: {
     githubIcon

@@ -1,6 +1,6 @@
 <template>
   <section id="projects">
-    <h1 class="header">Projects</h1>
+    <h1 class="header">{{text.projects.title}}</h1>
     <div
       v-for="(feature, index) of text.projects.features"
       v-bind:key="feature.name"

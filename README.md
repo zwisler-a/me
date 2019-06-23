@@ -1,29 +1,10 @@
-# vme
+# ME
 
-## Project setup
-```
-npm install
-```
+Personal website made with vue
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+# Deploy Variables
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- $SSH_PRIVATE_KEY
+- $SSH_USER
+- $DEPLOY_SERVER
+- $DEPLOY_PATH

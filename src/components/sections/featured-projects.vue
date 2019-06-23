@@ -14,8 +14,8 @@
         <h4 class="featured">{{text.projects.featured}}</h4>
         <h2 class="title">{{feature.name}}</h2>
         <p class="desc">{{feature.desc}}</p>
-        <ul class="techs" v-for="tech of feature.techs" v-bind:key="tech">
-          <li>{{tech}}</li>
+        <ul class="techs">
+          <li v-for="tech of feature.techs" v-bind:key="tech">{{tech}}</li>
         </ul>
         <a class="github-link" aria-label="github-link" v-bind:href="feature.link">
           <github-icon/>
@@ -118,6 +118,7 @@ export default {
   display: flex;
   font-family: monospace;
   flex-wrap: wrap;
+  columns: 2;
 }
 .techs li {
   padding: 0 16px 0 0;

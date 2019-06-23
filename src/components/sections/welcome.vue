@@ -4,29 +4,27 @@
       <span id="greeting">{{text.welcome.greeting}}</span>
       <h1 id="name">
         <typing v-bind:text="text.welcome.name"/>
-      </h1> 
+      </h1>
 
       <h2 id="name-subtitle" class="fade-in">{{text.welcome.nameSubTitle}}</h2>
       <p class="fade-in">{{text.welcome.frontText}}</p>
-      <a
-        id="contact"
-        aria-label="email"
-        href="mailto:alexander@zwisler-online.de"
-        class="fade-in"
-      >{{text.welcome.contactMe}}</a>
+      <acc-button class="fade-in" id="contact">
+        <a aria-label="email" href="mailto:alexander@zwisler-online.de">{{text.welcome.contactMe}}</a>
+      </acc-button>
     </div>
   </section>
 </template>
  
 <script>
 import typing from "../shared/typing.vue";
+import accButton from "../shared/accent-button.vue";
 import text from "../../text.js";
 export default {
   name: "welcome",
   data: () => ({
     text
   }),
-  components: { typing }
+  components: { typing, accButton }
 };
 </script>
 
@@ -58,10 +56,7 @@ export default {
   padding: 16px 32px;
   user-select: none;
   margin-top: 16px;
-  display: inline-block;
   cursor: pointer;
-  border-radius: 3px;
-  border: solid 1px var(--accent);
 }
 @media only screen and (max-width: 768px) {
   #name {

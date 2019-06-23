@@ -18,9 +18,9 @@
         >
           <a>{{item.name}}</a>
         </div>
-        <div id="resume">
+        <acc-button id="resume">
           <a>Resume</a>
-        </div>
+        </acc-button>
       </nav>
     </div>
   </header>
@@ -28,17 +28,19 @@
 
 <script>
 import menuButton from "./shared/menu-button.vue";
+import accButton from "./shared/accent-button.vue";
 import { setTimeout } from "timers";
+import text from "./../text.js";
 export default {
   name: "navigation",
-  components: { menuButton },
+  components: { menuButton, accButton },
   data: function() {
     return {
       navItems: [
         { name: "", ref: "#welcome-section", url: "./" },
-        { name: "About", ref: "#about", url: "./about" },
-        { name: "Experience", ref: "#work", url: "./experience" },
-        { name: "Projects", ref: "#projects", url: "./projects" }
+        { name: text.about.title, ref: "#about", url: "./about" },
+        { name: text.experience.title, ref: "#work", url: "./experience" },
+        { name: text.projects.title, ref: "#projects", url: "./projects" }
       ]
     };
   },
@@ -120,16 +122,9 @@ export default {
 }
 #navigation .nav-item[active] {
   color: var(--accent);
-  border-bottom: solid 1px var(--accent);
+  border-bottom: solid 0px var(--accent);
 }
-#resume {
-  border: solid 1px var(--accent);
-  color: var(--accent);
-  border-radius: 1px;
-  margin: 0 16px;
-  padding: 8px;
-  cursor: pointer;
-}
+
 #nav {
   display: flex;
   flex-direction: row;

@@ -40,7 +40,7 @@ export default {
 
 <style scoped>
 #projects .header {
-  margin-bottom: 128px;
+  margin-bottom: 60px;
 }
 #projects {
   margin-bottom: 128px;

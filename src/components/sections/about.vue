@@ -15,7 +15,10 @@
         </div>
       </div>
       <div style="flex: 250px 1 1;margin-top:64px">
-        <div style="width:300px; height:300px; background:white; margin:auto;"></div>
+        <div id="portrait">
+          <div class="overlay"></div>
+          <img src="assets/user.jpg" />
+        </div>
       </div>
     </div>
   </section>
@@ -32,6 +35,46 @@ export default {
 </script>
 
 <style scoped>
+#portrait::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: -25px;
+  left: 25px;
+  border: solid 2px var(--accent);
+  height: 100%;
+  z-index: 1;
+  transition-duration: 0.3s;
+  transition-property: top left;
+}
+#portrait:hover > .overlay {
+  opacity: 0;
+}
+#portrait > .overlay {
+  transition: opacity 0.3s;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+  background: var(--accent);
+  opacity: 0.3;
+}
+#portrait > img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+}
+#portrait:hover::after {
+  top: -10px;
+  left: 10px;
+}
+#portrait {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+}
 #about-wrapper {
   display: flex;
   flex-wrap: wrap;

@@ -46,11 +46,12 @@ export default {
   },
 
   projects: {
+    title: 'Projects',
     featured: 'Featured Project',
     features: [
       {
         name: 'Game-Engine2',
-        image: 'assets/engine.gif',
+        image: 'assets/images.jpg',
         desc:
           'Pariatur exercitation Lorem labore dolor fugiat esse fugiat. Pariatur non dolor sit magna. Do ullamco occaecat dolore enim et cupidatat.',
         techs: ['Typescript'],
@@ -58,7 +59,7 @@ export default {
       },
       {
         name: 'Game-Engine',
-        image: 'assets/engine.gif',
+        image: 'assets/images.jpg',
         desc:
           'Pariatur exercitation Lorem labore dolor fugiat esse fugiat. Pariatur non dolor sit magna. Do ullamco occaecat dolore enim et cupidatat.',
         techs: ['Typescript'],

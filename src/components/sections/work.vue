@@ -55,6 +55,7 @@ export default {
   flex: 150px 0 0;
   display: flex;
   margin-right: 32px;
+  overflow: hidden;
   flex-direction: column;
 }
 
@@ -106,7 +107,7 @@ export default {
   #tabs {
     flex-direction: row;
     flex: 1 1 auto;
-    overflow: scroll;
+    overflow: hidden;
     justify-content: center;
   }
   #tabs .tab::before {

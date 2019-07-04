@@ -1,15 +1,15 @@
 export default {
   welcome: {
-    greeting: 'Hey, ich bin',
+    greeting: 'Hallo, ich bin',
     name: 'Alexander Zwisler',
-    nameSubTitle: "Magna ipsum aliqua est commodo voluptate",
-    frontText: `Magna ipsum aliqua est commodo voluptate est nisi ea elit laboris ea reprehenderit. Enim eu nostrud sunt pariatur dolor culpa commodo exercitation sint officia ea pariatur nulla. `,
+    nameSubTitle: "Student und Full Stack Developer",
+    frontText: `Derzeit studiere ich in Leipzig B.Sc Informatik und bin nebenher als Werksstudent bei der Exxeta Gmbh tätig.`,
     contactMe: 'Contact me'
   },
   about: {
     title: 'Über mich',
     aboutFirst:
-      'Adipisicing cillum do eu voluptate dolor. Eu ullamco irure eiusmod consectetur quis Lorem aute nisi ea amet adipisicing. Nulla est ex exercitation non labore minim nostrud.',
+      '',
     aboutSecond:
       'Proident cupidatat duis adipisicing excepteur quis qui minim quis cillum ex cupidatat. Ad proident nostrud ex ad amet labore quis cupidatat labore minim cillum velit anim reprehenderit. Ut quis nostrud ipsum est consequat aliquip occaecat consectetur. ',
     aboutTechs1: ['Angular', 'TypeScript', 'NodeJS'],
@@ -24,7 +24,7 @@ export default {
         fromTo: '09.2017 - Bis jetzt',
         title: 'Werksstudent',
         desc: '',
-        techs: ['Angular', 'Jenkins', 'NodeJS', 'JavaScript', 'Jasmine & Karma', 'Gitlab', 'Jira']
+        techs: ['Angular', 'Jenkins', 'NodeJS', 'JavaScript', 'Jasmine & Karma', 'Gitlab', 'Jira', 'Vaadin', 'Java', 'Spring', 'Activi, Camunda, Flowable']
       },
       {
         name: 'ARTEC',
@@ -53,7 +53,7 @@ export default {
         name: 'Game-Engine',
         image: 'assets/images.jpg',
         desc:
-          'Dolore ullamco in veniam non non consequat officia. Proident ut et do elit exercitation esse voluptate magna reprehenderit anim aliquip labore excepteur. Aliquip Lorem minim et consequat nisi nostrud labore quis nostrud voluptate eiusmod reprehenderit. In adipisicing pariatur nisi sint cupidatat adipisicing adipisicing mollit est ea deserunt nulla proident aute.',
+          'Aliquip Lorem minim et consequat nisi nostrud labore quis nostrud voluptate eiusmod reprehenderit. In adipisicing pariatur nisi sint cupidatat adipisicing adipisicing mollit est ea deserunt nulla proident aute.',
         techs: ['Java', 'OpenGL', 'LWJGL', '"Blender"'],
         link: ''
       },

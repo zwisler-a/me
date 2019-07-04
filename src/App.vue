@@ -1,14 +1,15 @@
 <template>
   <div id="app">
     <main>
-      <welcome/>
-      <about class="hidden"/>
-      <work class="hidden"/>
-      <featured-projects class="hidden"/>
-      <projects class="hidden"/>
+      <welcome />
+      <about class="hidden" />
+      <work class="hidden" />
+      <featured-projects class="hidden" />
+      <projects class="hidden" />
     </main>
-    <navigation/>
-    <networks/>
+    <navigation />
+    <networks />
+    <in-dev />
   </div>
 </template>
 
@@ -20,6 +21,7 @@ import about from "./components/sections/about.vue";
 import networks from "./components/networks.vue";
 import projects from "./components/sections/projects.vue";
 import featuredProjects from "./components/sections/featured-projects.vue";
+import inDev from "./components/shared/in-development-ribbon.vue";
 
 export default {
   name: "app",
@@ -30,7 +32,8 @@ export default {
     about,
     networks,
     projects,
-    featuredProjects
+    featuredProjects,
+    inDev
   }
 };
 </script>

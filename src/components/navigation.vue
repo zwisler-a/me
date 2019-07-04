@@ -1,9 +1,9 @@
 <template>
   <header id="navigation-header">
     <div ref="nav" id="navigation">
-      <a aria-label="Home" href="./" class="logo"></a>
+      <div></div>
       <span id="sidenav-button" @click="toggleSidenav()">
-        <menu-button ref="menu"/>
+        <menu-button ref="menu" />
       </span>
 
       <div @click="toggleSidenav()" id="backdrop"></div>
@@ -29,7 +29,6 @@
 <script>
 import menuButton from "./shared/menu-button.vue";
 import accButton from "./shared/accent-button.vue";
-import { setTimeout } from "timers";
 import text from "./../text.js";
 export default {
   name: "navigation",
@@ -51,7 +50,7 @@ export default {
         top: el.getBoundingClientRect().top - 84 + window.scrollY,
         behavior: "smooth"
       });
-      history.pushState(navItem, "", navItem.url);
+      // history.pushState(navItem, "", navItem.url);
     },
     isElementInViewport: function(navItem) {
       const el = document.querySelector(navItem.ref);
@@ -67,26 +66,6 @@ export default {
       this.$refs["nav"].classList.toggle("open");
       this.$refs["menu"].$data.close = !this.$refs["menu"].$data.close;
     }
-  },
-  mounted: function() {
-    window.addEventListener("scroll", () => {
-      this.navItems.forEach(item => {
-        if (this.isElementInViewport(item)) {
-          if (!item.active) history.pushState({}, "", item.url);
-          item.active = true;
-        } else {
-          item.active = false;
-        }
-      });
-      this.$forceUpdate();
-    });
-    setTimeout(() => {
-      this.$data.navItems.forEach(item => {
-        if (item.url === location.pathname) {
-          this.navigateTo(item);
-        }
-      });
-    }, 800);
   }
 };
 </script>
@@ -112,8 +91,12 @@ export default {
   justify-content: space-between;
   align-items: center;
 }
+#navigation .nav-item:hover a {
+  color: var(--accent);
+}
 #navigation .nav-item a {
   color: var(--font);
+  transition: color 0.2s;
 }
 #navigation .nav-item {
   user-select: none;
@@ -137,6 +120,9 @@ export default {
 }
 #backdrop {
   display: none;
+}
+#resume a {
+  color: var(--accent);
 }
 
 @media only screen and (max-width: 768px) {

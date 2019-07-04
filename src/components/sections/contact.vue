@@ -1,14 +1,14 @@
 <template>
   <div id="contact-section">
-    <a>
+    <a href="https://github.com/zwisler-a">
       <github-icon />
       <span>zwisler-a</span>
     </a>
-    <a>
+    <a href="https://www.linkedin.com/in/alexander-zwisler-9600a3117/">
       <linkedin-icon />
       <span>Alexander Zwisler</span>
     </a>
-    <a>
+    <a href="mailto:contact@zwisler.dev">
       <email-icon />
       <span>contact@zwisler.dev</span>
     </a>
@@ -34,6 +34,8 @@ export default {
 #contact-section {
   padding: 16px;
   display: flex;
+  position: relative;
+  left: 0px;
   flex-direction: column;
 }
 #contact-section a:hover {

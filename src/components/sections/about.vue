@@ -17,7 +17,7 @@
       <div style="flex: 250px 1 1;margin-top:64px">
         <div id="portrait">
           <div class="overlay"></div>
-          <img src="assets/user.jpg" />
+          <img alt="portrait" src="assets/user.jpg" />
         </div>
       </div>
     </div>

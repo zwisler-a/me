@@ -26,8 +26,7 @@ body {
       var(--background-light) 97.9vh,
       var(--background) 98vh,
       var(--background) 100%
-    ),
-    url(assets/bg.png) no-repeat left top;
+    );
 }
 .centered.logo {
   position: absolute;

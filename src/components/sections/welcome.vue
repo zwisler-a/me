@@ -8,12 +8,14 @@
 
       <h2 id="name-subtitle" class="fade-in">{{text.welcome.nameSubTitle}}</h2>
       <p class="fade-in">{{text.welcome.frontText}}</p>
-      <span v-on:click="toggleContact">
-        <acc-button class="fade-in" id="contact">
-          <a>{{text.welcome.contactMe}}</a>
-        </acc-button>
-      </span>
+      <div style="display:flex;">
+        <span v-on:click="toggleContact">
+          <acc-button class="fade-in" id="contact">
+            <a>{{text.welcome.contactMe}}</a>
+          </acc-button>
+        </span>
         <contact v-bind:class="{ 'fade-in-bottom': showContact, 'hidden': !showContact }" />
+      </div>
     </div>
   </section>
 </template>

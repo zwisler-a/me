@@ -2,8 +2,8 @@ export default {
   welcome: {
     greeting: 'Hallo, ich bin',
     name: 'Alexander Zwisler',
-    nameSubTitle: "Student und Full Stack Developer",
-    frontText: `Derzeit studiere ich in Leipzig B.Sc Informatik und bin nebenher als Werksstudent bei der Exxeta Gmbh tätig.`,
+    nameSubTitle: "Fugiat deserunt pariatur nulla",
+    frontText: `Aute et irure id anim ut cupidatat ad dolor occaecat officia adipisicing. Dolore dolor ipsum tempor Lorem aute nulla minim pariatur minim proident duis sint duis. Eiusmod mollit labore quis fugiat ad nisi nisi Lorem id. Aliquip laboris non id ut sunt est reprehenderit.`,
     contactMe: 'Contact me'
   },
   about: {

@@ -1,6 +1,8 @@
 # ME
 
-Personal website made with vue
+Personal website made with vue.
+
+https://zwisler.dev
 
 # Deploy Variables
 

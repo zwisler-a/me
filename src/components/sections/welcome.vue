@@ -33,6 +33,7 @@ export default {
   }),
   methods: {
     toggleContact: function() {
+      if(sa) sa('contact_me_clicked');
       this.showContact = !this.showContact;
     }
   },
